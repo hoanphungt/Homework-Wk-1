@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <title>Mocha Tests</title>
-    <link href="https://unpkg.com/mocha@4.0.1/mocha.css" href="style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/mocha@4.0.1/mocha.css" href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -23,6 +23,15 @@
   <script>mocha.setup('bdd')</script>
   <script src="YOUR_JAVASCRIPT_HERE.js"></script>
   <script src="game_logic.test.js"></script>
+  
+  <button onclick="displayStats(hero)" id="display">Display stats of the Hero</button>
+  <p id="heroName">name</p>
+  <p id="health">health</p>
+  <p id="weaponType">weapon type</p>
+  <p id="weaponDamage">weapon damage</p>
 
+  <input id="addHeroName" type="text" placeholder="type new hero name">
+  <button id="nameChanger" onclick="changeName(hero)">Change the name of the hero</button>
+  
 </body>
 </html>

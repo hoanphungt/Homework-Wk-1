@@ -29,3 +29,17 @@ function equipWeapon(hero) {
         hero.weapon = hero.inventory[0];
     };
 };
+
+function displayStats(hero) {
+    heroName.innerText = hero.name;
+    health.innerText = hero.health;
+    weaponType.innerText = hero.weapon.type;
+    weaponDamage.innerText = hero.weapon.damage;
+};
+
+function changeName(hero) {
+    let newHeroName = document.getElementById('addHeroName');
+    heroName.innerText = newHeroName.value;
+}
+
+
